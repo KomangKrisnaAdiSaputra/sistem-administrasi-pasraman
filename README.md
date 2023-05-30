@@ -8,6 +8,10 @@
 </p>
 
 [Demo](https://sistem-administrasi-pasraman.000webhostapp.com/). <br>
+<br>
+Login <br>
+Email : admin@gmail.com <br>
+Password : 12345 <br>
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

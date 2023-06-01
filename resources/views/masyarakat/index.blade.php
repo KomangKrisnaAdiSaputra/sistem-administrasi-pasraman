@@ -41,6 +41,144 @@
         <!--/Slider thumbnail-->
     </section><!-- hero area end -->
 
+    <!-- shopping product area start -->
+    {{-- <section class="shopping-product ptb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="shopping-product-menu max-width-360">
+                        <ul>
+                            <li data-filter="*" class="active">All</li>
+                            <li data-filter=".new">New</li>
+                            <li data-filter=".best">Best Sells</li>
+                            <li data-filter=".seasonal">Seasonal</li>
+                            <li data-filter=".other">Others</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row product-item">
+                <div class="col-lg-3 col-sm-6 new other">
+                    <div class="sell-item max-width-360">
+                        <div class="product-img">
+                            <img src="{{ asset('assets/masyarakat/assets/img/main-product/5.jpg') }}" alt="">
+                            <div class="product-img-overlay">
+                                <a href="#" class="krishok-btn">Add to cart <i
+                                        class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <p><a href="product-details.html">Product Name</a></p>
+                        <h5>$50.00</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 best seasonal">
+                    <div class="sell-item max-width-360">
+                        <div class="product-img">
+                            <img src="{{ asset('assets/masyarakat/assets/img/main-product/6.jpg') }}" alt="">
+                            <div class="product-img-overlay">
+                                <a href="#" class="krishok-btn">Add to cart <i
+                                        class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <p><a href="product-details.html">Product Name</a></p>
+                        <h5>$50.00</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 other">
+                    <div class="sell-item max-width-360">
+                        <div class="product-img">
+                            <img src="{{ asset('assets/masyarakat/assets/img/main-product/7.jpg') }}" alt="">
+                            <div class="product-img-overlay">
+                                <a href="#" class="krishok-btn">Add to cart <i
+                                        class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <p><a href="product-details.html">Product Name</a></p>
+                        <h5>$50.00</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 new best">
+                    <div class="sell-item max-width-360">
+                        <div class="product-img">
+                            <img src="{{ asset('assets/masyarakat/assets/img/main-product/8.jpg') }}" alt="">
+                            <div class="product-img-overlay">
+                                <a href="#" class="krishok-btn">Add to cart <i
+                                        class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <p><a href="product-details.html">Product Name</a></p>
+                        <h5>$50.00</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 other seasonal">
+                    <div class="sell-item max-width-360">
+                        <div class="product-img">
+                            <img src="{{ asset('assets/masyarakat/assets/img/main-product/9.jpg') }}" alt="">
+                            <div class="product-img-overlay">
+                                <a href="#" class="krishok-btn">Add to cart <i
+                                        class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <p><a href="product-details.html">Product Name</a></p>
+                        <h5>$50.00</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 new best">
+                    <div class="sell-item max-width-360">
+                        <div class="product-img">
+                            <img src="{{ asset('assets/masyarakat/assets/img/main-product/10.jpg') }}" alt="">
+                            <div class="product-img-overlay">
+                                <a href="#" class="krishok-btn">Add to cart <i
+                                        class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <p><a href="product-details.html">Product Name</a></p>
+                        <h5>$50.00</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 seasonal">
+                    <div class="sell-item max-width-360">
+                        <div class="product-img">
+                            <img src="{{ asset('assets/masyarakat/assets/img/main-product/11.jpg') }}" alt="">
+                            <div class="product-img-overlay">
+                                <a href="#" class="krishok-btn">Add to cart <i
+                                        class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <p><a href="product-details.html">Product Name</a></p>
+                        <h5>$50.00</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 best">
+                    <div class="sell-item max-width-360">
+                        <div class="product-img">
+                            <img src="{{ asset('assets/masyarakat/assets/img/main-product/12.jpg') }}" alt="">
+                            <div class="product-img-overlay">
+                                <a href="#" class="krishok-btn">Add to cart <i
+                                        class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        <p><a href="product-details.html">Product Name</a></p>
+                        <h5>$50.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="pagination">
+                        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li class="active"><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> --}}
+    <!-- shopping product area end -->
+
     <!-- product area start -->
     <section class="product ptb-70">
         <div class="container">
@@ -337,7 +475,7 @@
             </div>
         </div>
     </section><!-- product area end -->
-    {{-- <!-- sell area start -->
+    <!-- sell area start -->
     <section class="ptb-80">
         <div class="container">
             <div class="row">
@@ -354,6 +492,15 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="sell-area owl-carousel">
+                        {{-- <div class="sell-item">
+                            <a class="product-img example-image-link" href="{{ asset('assets/masyarakat/assets/img/katalog/bayuhotonsapuleger.jpg') }}" data-lightbox="example-set" data-title="image gallery">
+                                <div class="product-gallery-item max-width-360">
+                                    <div class="product-gallery-overlay">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> --}}
                         <div class="sell-item">
                             <div class="product-img">
                                 <a class="example-image-link"
@@ -423,5 +570,5 @@
                 </div>
             </div>
         </div>
-    </section><!-- sell area end --> --}}
+    </section><!-- sell area end -->
 @endsection

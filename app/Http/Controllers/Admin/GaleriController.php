@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\TbGaleri;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Intervention\Image\Facades\Image as ResizeImage;
 
 class GaleriController extends Controller
 {
@@ -48,28 +49,40 @@ class GaleriController extends Controller
         $ekstensi_diperbolehkan    = array('image/png', 'image/jpg', 'image/jpeg');
         $ekstensi = $foto->getClientMimeType();
         $ukuran    = $foto->getSize();
-
         if (in_array($ekstensi, $ekstensi_diperbolehkan) === true) {
-            if ($ukuran > 3048000) {
-                return redirect(route('galeri.index'))->with('error', 'Upload Foto Kurang dari 3mb!');
-            } else {
-
-                $fileName = time() . '.' . $foto->getClientOriginalExtension();
-                $foto->move('image/galeri/', $fileName);
-
-                TbGaleri::create([
-                    'id_user' => auth()->user()->id,
-                    'nama_foto' => $nama_foto,
-                    'keterangan' => $keterangan,
-                    'foto' => $fileName
-                ]);
-            }
-
-
-            return redirect(route('galeri.index'));
+            $path = public_path('image/barang/');
+            !is_dir($path) &&
+                mkdir($path, 0777, true);
+            $nama_gambar = time() . '.' . $request->gambar->extension();
+            // ResizeImage::make($foto);
+            // ResizeImage::make($foto)
+            //     ->resize(1000, 1000)
+            //     ->save($path . $nama_gambar);
         } else {
-            return redirect(route('galeri.index'))->with('error', 'Upload Foto Dengan Ekstensi png/jpg/jpeg!');
+            session()->flash('error', 'Upload Foto Dengan Ekstensi png/jpg/jpeg!');
+            return redirect()->route('barang.index');
         }
+        // if (in_array($ekstensi, $ekstensi_diperbolehkan) === true) {
+        //     if ($ukuran > 3048000) {
+        //         return redirect(route('galeri.index'))->with('error', 'Upload Foto Kurang dari 3mb!');
+        //     } else {
+
+        //         $fileName = time() . '.' . $foto->getClientOriginalExtension();
+        //         $foto->move('image/galeri/', $fileName);
+
+        //         TbGaleri::create([
+        //             'id_user' => auth()->user()->id,
+        //             'nama_foto' => $nama_foto,
+        //             'keterangan' => $keterangan,
+        //             'foto' => $fileName
+        //         ]);
+        //     }
+
+
+        //     return redirect(route('galeri.index'));
+        // } else {
+        //     return redirect(route('galeri.index'))->with('error', 'Upload Foto Dengan Ekstensi png/jpg/jpeg!');
+        // }
     }
 
     /**
